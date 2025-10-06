@@ -16,35 +16,33 @@
 
 ## セットアップ
 
-### 1. Git設定
+### 1. Git 設定
 
 リポジトリをクローンした後、以下のコマンドを実行してください：
 
 ```bash
 git config --global core.autocrlf false
 ```
-※上記は、チェックアウト時、コミット時に改行コードを変更しない設定です（.gitattributesのままになります）
 
+※上記は、チェックアウト時、コミット時に改行コードを変更しない設定です（.gitattributes のままになります）
 
 ### 2. 仮想環境（.venv）の作成
 
-仮想環境（`.venv`ディレクトリ）はGitHubリポジトリに登録されていないため、pullした後に仮想環境を作成する必要がある。
+仮想環境（`.venv`ディレクトリ）は GitHub リポジトリに登録されていないため、pull した後に仮想環境を作成する必要がある。
 
 ```コマンド（Windows Power Shell）
 uv venv --python 3.12
 ```
 
-※ `uv init`コマンドの実行は不要（pyproject.tomlの作成などは作成済みのものがGitHubにプッシュされている）
+※ `uv init`コマンドの実行は不要（pyproject.toml の作成などは作成済みのものが GitHub にプッシュされている）
 
-
-### 3.  .python-version の更新
+### 3. .python-version の更新
 
 ```コマンド（Windows Power Shell）
 uv python pin 3.12
 ```
 
-※ `.python-version`が更新される。GitHubに登録されていない場合は新規作成される。
-
+※ `.python-version`が更新される。GitHub に登録されていない場合は新規作成される。
 
 ### 4. 依存関係のインストール
 
@@ -58,7 +56,7 @@ uv sync
 
 API サーバーを起動してください（詳細は省略）。
 
-### 5. UI アプリケーションの起動
+### UI アプリケーションの起動
 
 新しいターミナルを開いて以下のコマンドを実行：
 
