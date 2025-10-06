@@ -28,7 +28,7 @@ def query_api(query: str) -> str:
     """
     try:
         response = requests.post(
-            f"{API_BASE_URL}/query", json={"query": query}, timeout=60
+            f"{API_BASE_URL}/query", json={"query": query}, timeout=120
         )
         response.raise_for_status()
         result = response.json()
@@ -44,7 +44,7 @@ def app():
 
     # API接続確認
     try:
-        response = requests.get(f"{API_BASE_URL}/docs", timeout=5)
+        response = requests.get(f"{API_BASE_URL}/docs", timeout=10)
         if response.status_code == 200:
             st.sidebar.success("✅ AIエージェントサーバーに接続されています")
         else:
