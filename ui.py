@@ -2,13 +2,11 @@
 import streamlit as st
 import requests
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from config import API_BASE_URL
 from logger import get_logger
 
 # ロガー設定
 logger = get_logger(__name__)
-
-# FastAPIサーバーのURL（開発環境用）
-API_BASE_URL = "http://localhost:8000"
 
 
 def show_message(message: BaseMessage) -> None:
