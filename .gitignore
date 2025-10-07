@@ -1,38 +1,87 @@
+# =========================
 # Python-generated files
+# =========================
 __pycache__/
-*.py[oc]
+*.py[ocd]
 *.pyo
 *.pyd
+*$py.class
+*.so
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
+.installed.cfg
 *.egg
+MANIFEST
 
+# =========================
 # Virtual environments
+# =========================
 .venv/
-venv/
 env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
+# =========================
 # Environment variables
+# (often contain secrets or API keys)
+# =========================
 .env
+.env*
 .env.local
 .env.*.local
 
+# =========================
+# Testing and coverage
+# =========================
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# =========================
 # Logs
+# =========================
 *.log
 log/
 logs/
 
-# IDE/Editor
+# =========================
+# IDE and editor files
+# =========================
 .vscode/settings.json
 .vscode/launch.json
 .idea/
 *.swp
 *.swo
 *~
+.python-version
 
-# OS generated files
+# =========================
+# OS-specific files
+# =========================
 .DS_Store
 .DS_Store?
 ._*
@@ -41,6 +90,42 @@ logs/
 ehthumbs.db
 Thumbs.db
 
-# Temporary files
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints
+
+# =========================
+# mypy type checker
+# =========================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# =========================
+# Documentation
+# =========================
+docs/_build/
+
+# =========================
+# Project-specific
+# =========================
+faiss_db/
+*.faiss
+*.pkl
+
+# =========================
+# Temporary and backup files
+# =========================
+tmp/
+temp/
 *.tmp
 *.temp
+*.bak
+*.backup
+
+# =========================
+# Local configuration files
+# =========================
+config.local.*
+.local/
